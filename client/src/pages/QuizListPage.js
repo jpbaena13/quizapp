@@ -48,7 +48,7 @@ const QuizListPage = () => {
       key: 'questions',
       render: (_, { questions }) => (
         <Tag color={'green'}>
-          {questions}
+          {questions.length}
         </Tag>
       )
     },
@@ -79,8 +79,7 @@ const QuizListPage = () => {
         key: idx,
         _id: quiz._id, // eslint-disable-line
         name: quiz.name,
-        questions: quiz.questions.length,
-        options: '++'
+        questions: quiz.questions
       })));
     }
   }, [quizzes]);

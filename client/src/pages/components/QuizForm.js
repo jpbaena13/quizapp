@@ -17,7 +17,6 @@ const QuizForm = ({ quiz }) => {
     if (quiz) {
       const temp = { ...quiz };
       temp.name = values.name;
-      temp.questions = [];
       await dispatch(actions.updateQuizAsync(temp));
     } else {
       await dispatch(actions.createQuizAsync(values));
