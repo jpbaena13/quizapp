@@ -1,6 +1,6 @@
 import requests from './requests';
 
-const API = 'http://localhost:5000';
+const API = document.location.origin;
 
 /**
  * API Calls
