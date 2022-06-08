@@ -1,0 +1,113 @@
+html, body, #app {
+	background-color: $body-bg;
+	color: $gray;
+	height: 100%;
+	margin: 0;
+}
+
+.color-blue { color: $blue; }
+.color-lightblue { color: $lightblue; }
+.color-darkblue { color: $darkblue; }
+.color-yellow { color: $yellow; }
+.color-lightyellow { color: $lightyellow; }
+.color-darkyellow { color: $darkyellow; }
+.color-gray { color: $gray; }
+.color-lightgray { color: $lightgray; }
+
+.bg-blue { background-color: $blue;}
+.bg-lightblue { background-color: $lightblue;}
+.bg-darkblue { background-color: $darkblue;}
+.bg-yellow { background-color: $yellow;}
+.bg-lightyellow { background-color: $lightyellow;}
+.bg-darkyellow { background-color: $darkyellow;}
+.bg-gray { background-color: $gray;}
+.bg-lightgray { background-color: $lightgray;}
+
+.box {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 1px 1px 4px #777;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+
+.unc-form {
+	background-color: white;
+	border: 1px solid #00000020;
+	border-radius: 10px;
+	margin: 2em auto;
+	max-width: 580px;
+	padding: 2em;
+	
+	.unc-form-name {
+		border-top: 1px solid #00000020;
+		border-bottom: 1px solid #00000020;
+		color: $lightgray;
+		font-size: 2em;
+		margin: auto;
+		margin-bottom: 1em;
+		text-align: center;
+		width: 90%;
+	}	
+}
+
+.unc-welcome {
+	background-color: $darkblue;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+
+	.content {
+		text-align: center;
+
+		img {
+			box-shadow: 0px 0px 35px #6c4ca4;
+			border-radius: 10px;
+			display: block;
+			max-width: 720px;
+			width: 90%
+		}
+	}
+}
+
+.unc-login,
+.unc-register {
+	background-color: $darkblue;
+	height: 100%;
+	overflow: auto;
+}
+
+.unc-quiz {
+	.ant-table .ant-space-item {
+		cursor: pointer;
+	}
+
+	.box.correct {
+		box-shadow: 1px 1px 4px green;
+
+		input:checked {
+			border: thin solid green;
+		}
+	}
+
+	.box.wrong {
+		box-shadow: 1px 1px 4px red;
+
+		input:checked {
+			border: thin solid red;
+		}
+	}
+
+	.answer {
+		background-color: $lightgray;
+		border-radius: 10px;
+		padding: .5em;
+		margin-bottom: .5em;
+
+		input {
+			margin-right: 1em;
+		}
+	}
+}
